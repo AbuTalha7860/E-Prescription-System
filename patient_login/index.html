@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo">
+            logo
+        </div>
+
+        <div class="services">
+
+            <div class="common consult">
+                <img src="doc.svg" alt="">
+
+                Consult A Doctor
+                
+
+
+
+            </div>
+            <div class=" common history">
+                <!-- <i class="fa-duotone fa-solid fa-file-medical"></i> -->
+                <img src="history.svg" alt="">
+                Track History 
+            </div>
+
+            <div class=" common update">
+                <img src="update.svg" alt="">
+                Update Profile 
+            </div>
+
+
+          
+
+        </div>
+
+        <div class="  user">
+
+                  <!-- start -->
+
+           
+
+             <!-- end -->
+
+
+            <div class="profilepic">
+                <img src="user.svg" alt="">
+            </div>
+            <div class="text">
+                Hello sohom Mukherjee;
+            </div>
+
+
+            <div class="hamburger">
+                <span class="listitem it1"  ></span>
+                <span class="listitem vanish" ></span>
+                <span  class="listitem it2" ></span>
+            </div>
+
+        </div>
+        <!-- <img src="doctor.svg" alt=""> -->
+
+
+    </div>
+
+        <div class="med">
+                <h1>Medications :</h1>
+                <hr >
+            <div class="section medications" >
+                <h2>Ongoing Medication</h2>
+                <div class="medication">
+                    <h3>Medication 1</h3>
+                    <p><strong>Dosage:</strong> 10mg</p>
+                    <p><strong>Prescribed by:</strong> Dr. Smith</p>
+                    <p><strong>Start Date:</strong> 2024-07-01</p>
+                    <p><strong>End Date:</strong> 2024-07-30</p>
+                    <button onclick="requestRefill('Medication 1')">Request Refill</button>
+                </div>
+                
+                <div class="medication">
+                    <h3>Medication 2</h3>
+                    <p><strong>Dosage:</strong> 20mg</p>
+                    <p><strong>Prescribed by:</strong> Dr. Johnson</p>
+                    <p><strong>Start Date:</strong> 2024-07-05</p>
+                    <p><strong>End Date:</strong> 2024-08-05</p>
+                    <button onclick="requestRefill('Medication 2')">Request Refill</button>
+                </div>
+                
+                <div class="viewmore">
+
+                    <button>View More</button>
+
+                </div>
+
+            </div>
+            <div class="  section" id="tasks">
+                <h2>Upcoming Tasks</h2>
+                <hr>
+                <div class="task">
+                    <p><strong>Task:</strong> Refill Medication 1</p>
+                    <p><strong>Due Date:</strong> 2024-07-20</p>
+                </div>
+                <div class="task">
+                    <p><strong>Task:</strong> Appointment with Dr. Smith</p>
+                    <p><strong>Date:</strong> 2024-07-25</p>
+                </div>
+                <div class="viewmore">
+    
+                    <button>View More</button>
+    
+                </div>
+            </div>
+
+
+
+        </div>
+
+    <div class="steps">
+        <div class="boderbottom">Feeling unwell?</div>
+
+        <div class="textstep">Check your symptoms with this assessment in less than 3 min and consult a doctor</div>
+        <div class="stepsbody">
+            <div class="symptoms">
+                <img src="symtoms.svg" alt="">
+                <div>Enter Symptoms</div>
+
+            </div>
+            <div class="arrow">
+                >>>
+            </div>
+            <div class="symptoms">
+                <img src="cause.svg" alt="">
+                <div>Understand Causes</div>
+
+            </div>
+            <div class="arrow">
+                >>>
+            </div>
+            <div class="symptoms">
+                <img src="doctor2.svg" alt="">
+                <div>Book Consult</div>
+
+            </div>
+
+
+        </div>
+        <button>Consult</button>
+    </div>
+    <script>
+        let a = document.querySelector(".hamburger");
+        let b = document.querySelector(".services")
+        a.addEventListener("click",()=>{
+
+            b.classList.toggle("active")
+        })
+
+        
+    </script>
+</body>
+
+</html>
