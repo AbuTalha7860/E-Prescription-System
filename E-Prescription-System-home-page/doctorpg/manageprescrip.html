@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Prescriptions - E-Prescription System</title>
+    <link rel="stylesheet" href="./docstyle.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="indexdoc.html">Dashboard</a></li>
+                <li><a href="patients.html">Patients</a></li>
+                <li><a href="manageprescrip.html">Prescriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Manage Prescriptions</h1>
+        <form id="prescription-form">
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" id="patient_id" name="patient_id" required>
+
+            <div id="drug-list">
+                <div class="drug-entry">
+                    <label for="medication">Medication:</label>
+                    <input type="text" name="medication" required>
+                    <br>
+                    <label for="medication_type">Medication Type:</label>
+                    <select name="medication_type" required>
+                        <option value="Tablet">Tablet</option>
+                        <option value="Capsule">Capsule</option>
+                        <option value="Syrup">Syrup</option>
+                        <option value="Injection">Injection</option>
+                    </select>
+                    <br>
+                    <label for="dosage">Dosage:</label>
+                    <input type="text" name="dosage" required>
+                    <br>
+                    <label for="frequency">Frequency:</label>
+                    <input type="text" name="frequency" required>
+                    <br>
+                    <label for="duration">Duration:</label>
+                    <input type="text" name="duration" required>
+                    <br>
+                    <label for="notes">Additional Notes:</label>
+                    <textarea name="notes"></textarea>
+                </div>
+            </div>
+
+            <button type="button" id="add-drug-button">Add Another Drug</button>
+            <button type="submit">Create Prescription</button>
+        </form>
+        <div id="form-message"></div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
