@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Welcome, [Patient's Name]</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a  href="index1.html">Medications</a></li>
+                <li><a href="#tasks">Upcoming Tasks</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+        <div class="section" id="medications">
+            <h2>My Medications</h2>
+            <div class="medication">
+                <h3>Medication 1</h3>
+                <p><strong>Dosage:</strong> 10mg</p>
+                <p><strong>Prescribed by:</strong> Dr. Smith</p>
+                <p><strong>Start Date:</strong> 2024-07-01</p>
+                <p><strong>End Date:</strong> 2024-07-30</p>
+                <button onclick="requestRefill('Medication 1')">Request Refill</button>
+            </div>
+            <div class="medication">
+                <h3>Medication 2</h3>
+                <p><strong>Dosage:</strong> 20mg</p>
+                <p><strong>Prescribed by:</strong> Dr. Johnson</p>
+                <p><strong>Start Date:</strong> 2024-07-05</p>
+                <p><strong>End Date:</strong> 2024-08-05</p>
+                <button onclick="requestRefill('Medication 2')">Request Refill</button>
+            </div>
+        </div>
+        <div class="section" id="tasks">
+            <h2>Upcoming Tasks</h2>
+            <div class="task">
+                <p><strong>Task:</strong> Refill Medication 1</p>
+                <p><strong>Due Date:</strong> 2024-07-20</p>
+            </div>
+            <div class="task">
+                <p><strong>Task:</strong> Appointment with Dr. Smith</p>
+                <p><strong>Date:</strong> 2024-07-25</p>
+            </div>
+        </div>
+        <div class="section" id="profile">
+            <h2>Profile Information</h2>
+            <div class="profile">
+                <p><strong>Name:</strong> [Patient's Name]</p>
+                <p><strong>Email:</strong> [Patient's Email]</p>
+                <p><strong>Phone:</strong> [Patient's Phone]</p>
+                <button onclick="editProfile()">Edit Profile</button>
+            </div>
+        </div>
+        <div class="section support" id="support">
+            <h2>Support</h2>
+            <p>If you need help, please contact our support team.</p>
+            <button onclick="contactSupport()">Contact Support</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

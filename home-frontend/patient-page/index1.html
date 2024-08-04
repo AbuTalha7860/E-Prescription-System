@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <body>
+        <div class="nav">
+            <div class="logo">
+                logo
+            </div>
+    
+            <div class="services">
+    
+                <div class="common consult">
+                    <img src="./assets/doc.svg" alt="">
+    
+                    Consult A Doctor
+                    
+    
+    
+    
+                </div>
+                <div class=" common history">
+                    <!-- <i class="fa-duotone fa-solid fa-file-medical"></i> -->
+                    <img src="./assets/history.svg" alt="">
+                    Track History 
+                </div>
+                <a class="nornal" href="./updateProfile/index.html" >
+                    <div class=" common update">
+                        <img src="./assets/update.svg" alt="">
+                        Update Profile 
+                    </div>
+                </a>
+    
+    
+              
+    
+            </div>
+    
+            <div class="  user">
+    
+                      <!-- start -->
+    
+               
+    
+                 <!-- end -->
+    
+    
+                <div class="profilepic">
+                    <img src="./assets/user.svg" alt="">
+                </div>
+                <div class="text">
+                    Hello sohom Mukherjee;
+                </div>
+    
+    
+                <div class="hamburger">
+                    <span class="listitem it1"  ></span>
+                    <span class="listitem vanish" ></span>
+                    <span  class="listitem it2" ></span>
+                </div>
+    
+            </div>
+            <!-- <img src="doctor.svg" alt=""> -->
+    
+    
+        </div>
+    
+            <div class="med">
+                    <h1>Medications :</h1>
+                    <hr >
+                <div class="section medications" >
+                    <h2>Ongoing Medication</h2>
+                    <div class="medication">
+                        <h3>Medication 1</h3>
+                        <p><strong>Dosage:</strong> 10mg</p>
+                        <p><strong>Prescribed by:</strong> Dr. Smith</p>
+                        <p><strong>Start Date:</strong> 2024-07-01</p>
+                        <p><strong>End Date:</strong> 2024-07-30</p>
+                        <button class="patiant-bnt" onclick="requestRefill('Medication 1')">Request Refill</button>
+                    </div>
+                    
+                    <div class="medication">
+                        <h3>Medication 2</h3>
+                        <p><strong>Dosage:</strong> 20mg</p>
+                        <p><strong>Prescribed by:</strong> Dr. Johnson</p>
+                        <p><strong>Start Date:</strong> 2024-07-05</p>
+                        <p><strong>End Date:</strong> 2024-08-05</p>
+                        <button class="patiant-bnt" onclick="requestRefill('Medication 2')">Request Refill</button>
+                    </div>
+                    
+                    <div class="viewmore">
+    
+                        <button class="patiant-bnt">View More</button>
+    
+                    </div>
+    
+                </div>
+                <div class="  section" id="tasks">
+                    <h2>Upcoming Tasks</h2>
+                    <hr>
+                    <div class="task">
+                        <p><strong>Task:</strong> Refill Medication 1</p>
+                        <p><strong>Due Date:</strong> 2024-07-20</p>
+                    </div>
+                    <div class="task">
+                        <p><strong>Task:</strong> Appointment with Dr. Smith</p>
+                        <p><strong>Date:</strong> 2024-07-25</p>
+                    </div>
+                    <div class="viewmore">
+        
+                        <button class="patiant-bnt">View More</button>
+        
+                    </div>
+                </div>
+    
+    
+    
+            </div>
+    
+        <div class="steps">
+            <div class="boderbottom">Feeling unwell?</div>
+    
+            <div class="textstep">Check your symptoms with this assessment in less than 3 min and consult a doctor</div>
+            <div class="stepsbody">
+                <div class="symptoms">
+                    <img src="./assets/symtoms.svg" alt="">
+                    <div>Enter Symptoms</div>
+    
+                </div>
+                <div class="arrow">
+                    >>>
+                </div>
+                <div class="symptoms">
+                    <img src="./assets/cause.svg" alt="">
+                    <div>Understand Causes</div>
+    
+                </div>
+                <div class="arrow">
+                    >>>
+                </div>
+                <div class="symptoms">
+                    <img src="./assets/doctor2.svg" alt="">
+                    <div>Book Consult</div>
+    
+                </div>
+    
+    
+            </div>
+            <button>Consult</button>
+        </div>
+
+    <div class="container">
+        <!-- Card Grid Section -->
+        <div class="grid-container">
+            <div class="card">
+                <div class="icon cardiology"></div>
+                <h3>Cardiology</h3>
+                <p>For heart and blood pressure problems</p>
+                <p>Chest pain, Heart Failure, Cholesterol</p>
+            </div>
+            <div class="card">
+                <div class="icon dermatology"></div>
+                <h3>Dermatology</h3>
+                <p>Specialists for skin and hair treatments</p>
+                <p>Rashes, Pimples, Acne, Hairfall, Dandruff</p>
+            </div>
+            <div class="card">
+                <div class="icon ent"></div>
+                <h3>ENT</h3>
+                <p>ENT specialists for Ear, Nose and Throat</p>
+                <p>Earache, Bad breath, Swollen neck, Vertigo</p>
+            </div>
+            <div class="card">
+                <div class="icon general-physician"></div>
+                <h3>General Physician/Internal Medicine</h3>
+                <p>Managing acute medical conditions</p>
+                <p>Typhoid, Abdominal Pain, Migraine, Infections</p>
+            </div>
+            <div class="card">
+                <div class="icon neurology"></div>
+                <h3>Neurology</h3>
+                <p>Managing issues of the nervous system, brain</p>
+                <p>Stroke, Dementia, Epilepsy, Movement issues</p>
+            </div>
+            <div class="card">
+                <div class="icon obstetrics"></div>
+                <h3>Obstetrics & Gynaecology</h3>
+                <p>For women health issues and surgeries</p>
+                <p>Irregular periods, Pregnancy, PCOD/PCOS</p>
+            </div>
+            <div class="card">
+                <div class="icon orthopaedics"></div>
+                <h3>Orthopaedics</h3>
+                <p>Managing issues of bones, joints, knees</p>
+                <p>Knee Pain, Shoulder Pain, Bone deformity</p>
+            </div>
+            <div class="card">
+                <div class="icon paediatrics"></div>
+                <h3>Paediatrics</h3>
+                <p>Specialists to care and treat children</p>
+                <p>Constipation, Puberty, Nutrition, Autism</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="question">What is an online doctor consultation or online medical consultation?</div>
+                <div class="answer">An online doctor consultation or online medical consultation is a virtual visit with a doctor where patients can discuss their health concerns and receive medical advice and treatment plans without having to visit a clinic in person.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">How do I consult a doctor online now?</div>
+                <div class="answer">To consult a doctor online, you need to visit a telemedicine platform, choose the type of specialist you need, book an appointment, and then connect with the doctor via video call, phone call, or chat at the scheduled time.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Do you provide online doctor consultation for emergencies?</div>
+                <div class="answer">Online doctor consultations are typically not suitable for emergencies. For urgent medical situations, it's best to visit an emergency room or call emergency services immediately.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">During the online doctor consultation, the audio/video was not clear.</div>
+                <div class="answer">If the audio or video quality is poor during an online consultation, try checking your internet connection, switching to a different device, or moving to a location with better connectivity. You can also contact the support team of the telemedicine platform for assistance.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">What is the minimum fee for online doctor consultation?</div>
+                <div class="answer">The minimum fee for an online doctor consultation can vary depending on the platform and the specialist. It typically ranges from $10 to $50 per consultation.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">How do I pay for the online/offline doctor consultations?</div>
+                <div class="answer">Payments for online or offline doctor consultations can usually be made through various methods such as credit/debit cards, online banking, e-wallets, or other payment gateways provided by the telemedicine platform or clinic.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Will I get a refund if I cancel the online doctor consultation?</div>
+                <div class="answer">Refund policies vary by platform. Some platforms may offer a full or partial refund if you cancel the appointment within a certain time frame, while others may have a no-refund policy. Check the specific platform's cancellation and refund policy for details.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">What is a specialist doctor?</div>
+                <div class="answer">A specialist doctor is a medical professional who has completed advanced education and training in a specific area of medicine, such as cardiology, dermatology, neurology, etc. They focus on diagnosing and treating specific conditions related to their specialty.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">When should you consult a specialist doctor?</div>
+                <div class="answer">You should consult a specialist doctor when you have specific health concerns that require expert attention, such as chronic conditions, persistent symptoms, or when referred by a general physician for specialized care.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Why is it best to consult a specialist doctor?</div>
+                <div class="answer">Consulting a specialist doctor is beneficial because they have extensive knowledge and expertise in their field, allowing them to provide accurate diagnoses, effective treatments, and comprehensive care for specific health issues.</div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+.dashboard {
+    /* max-width: 800px; */
+    width: 100vw;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+}
+
+header {
+    background-color: #6a11cb;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #2575fc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    color: #6a11cb;
+}
+
+.medication, .task {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.medication h3, .task p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4a09ab;
+    transform: scale(1.05);
+}
+
+.profile p {
+    margin: 10px 0;
+}
+
+.support {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.support p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.support button {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.support button:hover {
+    background-color: #1e6bb8;
+}
+/* Add this to your existing styles.css */
+
+nav {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}

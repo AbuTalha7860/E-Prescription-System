@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Patient Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update Patient Profile</h1>
+        <form id="patientForm">
+            <div class="form-group">
+                <label for="patientName" >Name:</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Abu talha" required>
+            </div>
+            <div class="form-group">
+                <label for="patientEmail">Email:</label>
+                <input type="email" id="patientEmail" name="patientEmail" placeholder="Abutalha@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="patientPhone">Phone:</label>
+                <input type="tel" id="patientPhone" name="patientPhone" placeholder="0123456789" required>
+            </div>
+            <div class="form-group">
+                <label for="patientAddress">Address:</label>
+                <input type="text" id="patientAddress" name="patientAddress" placeholder="kolkata" required>
+            </div>
+            <div class="form-group">
+                <label for="patientAge">Age:</label>
+                <input type="number" id="patientAge" name="patientAge" placeholder="20" required>
+            </div>
+            <div class="form-group">
+                <label for="patientAge">D.O.B:</label>
+                <input type="date" id="patientAge" name="patientAge" placeholder="20" required>
+            </div>
+            <button type="submit">Update Profile</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js">
+        document.getElementById('patientForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const name = document.getElementById('patientName').value;
+            const email = document.getElementById('patientEmail').value;
+            const phone = document.getElementById('patientPhone').value;
+            const address = document.getElementById('patientAddress').value;
+            const age = document.getElementById('patientAge').value;
+        
+            const messageElement = document.getElementById('message');
+        
+            // Simulate an API call
+            setTimeout(() => {
+                // Update the message
+                messageElement.textContent = 'Profile updated successfully!';
+                
+                // Clear the form
+                document.getElementById('patientForm').reset();
+            }, 1000);
+        });
+        
+    </script>
+</body>
+</html>

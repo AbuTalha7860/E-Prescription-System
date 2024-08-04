@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>e-Prescription</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#patients">Patients</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a href="#prescriptions">Prescriptions</a></li>
+                    <li><a href="#messages">Messages</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#patients">Patients</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#prescriptions">Prescriptions</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="dashboard" class="dashboard">
+                <h2>Dashboard Overview</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Total Patients</h3>
+                        <p>150</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Appointments Today</h3>
+                        <p>5</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Pending Prescriptions</h3>
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="charts">
+                    <!-- Add charts here -->
+                    <canvas id="patientChart"></canvas>
+                </div>
+            </section>
+            <section id="patients" class="patients">
+                <h2>Patient List</h2>
+                <input type="text" placeholder="Search by name or condition..." id="search">
+                <div class="patient-list">
+                    <div class="patient">
+                        <h3>John Doe</h3>
+                        <p>Age: 45</p>
+                        <p>Condition: Hypertension</p>
+                        <a href="#patient-details">View Details</a>
+                    </div>
+                    <div class="patient">
+                        <h3>Jane Smith</h3>
+                        <p>Age: 30</p>
+                        <p>Condition: Diabetes</p>
+                        <a href="#patient-details">View Details</a>
+                    </div>
+                </div>
+            </section>
+            <section id="appointments" class="appointments">
+                <h2>Appointments</h2>
+                <div class="appointment-list">
+                    <div class="appointment">
+                        <h3>John Doe</h3>
+                        <p>Date: 2024-07-25</p>
+                        <p>Time: 10:00 AM</p>
+                        <p>Reason: Follow-up</p>
+                        <a href="#appointment-details">View Details</a>
+                    </div>
+                    <div class="appointment">
+                        <h3>Jane Smith</h3>
+                        <p>Date: 2024-08-01</p>
+                        <p>Time: 2:00 PM</p>
+                        <p>Reason: Check-up</p>
+                        <a href="#appointment-details">View Details</a>
+                    </div>
+                </div>
+                <button class="btn" onclick="scheduleAppointment()">Schedule New Appointment</button>
+            </section>
+            <section id="prescriptions" class="prescriptions">
+                <h2>Prescriptions</h2>
+                <div class="prescription-list">
+                    <div class="prescription">
+                        <h3>Medication 1</h3>
+                        <p>Dosage: 10mg</p>
+                        <p>Instructions: Take once daily</p>
+                        <a href="#prescription-details">View Details</a>
+                    </div>
+                    <div class="prescription">
+                        <h3>Medication 2</h3>
+                        <p>Dosage: 20mg</p>
+                        <p>Instructions: Take twice daily</p>
+                        <a href="#prescription-details">View Details</a>
+                    </div>
+                </div>
+                <button class="btn" onclick="createPrescription()">Create New Prescription</button>
+            </section>
+            <section id="messages" class="messages">
+                <h2>Messages</h2>
+                <div class="message-list">
+                    <div class="message">
+                        <h3>From: John Doe</h3>
+                        <p>Message: Please refill my prescription.</p>
+                        <a href="#message-details">View Message</a>
+                    </div>
+                    <div class="message">
+                        <h3>From: Jane Smith</h3>
+                        <p>Message: Need to discuss my treatment plan.</p>
+                        <a href="#message-details">View Message</a>
+                    </div>
+                </div>
+                <button class="btn" onclick="sendMessage()">Send New Message</button>
+            </section>
+            <section id="profile" class="profile">
+                <h2>Profile</h2>
+                <form id="profile-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="Dr. Smith">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" value="dr.smith@example.com">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" value="123-456-7890">
+                    <button class="btn" type="submit">Update Profile</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="doctor.js"></script>
+</body>
+</html>
